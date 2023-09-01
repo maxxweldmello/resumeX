@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Log in</h2>
+        <p>Don't have an account? <a href="/signup" style="color: black; padding: 0 5px; text-decoration: underline;">Sign up</a></p>
+        <form>
+            <input type="text" placeholder="Email" id="email"><br><br>
+
+            <input type="password" placeholder="Password" id="password"><br><br>
+
+            <input type="password" placeholder="Confirm Passoword" id="confpassword"><br><br>
+
+            <div class="button-field">
+            <a href="/signup" class="cancel-button">Cancel</a>
+            <a href="/createResume" class="signin-button" id="submit">Log in</a>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+		submit.addEventListener("click", () =>{
+			fetch('/api/login', {
+				method: 'put', body: JSON.stringify({ email: email.value, password: password.value, confpassword: confpassword.value}),
+				headers: {
+					"Content-Type": 'application/json'
+				}
+			}).then(res => res.json()).then(data =>console.log(data))
+		})
+	</script>
+</body>
+</html>
