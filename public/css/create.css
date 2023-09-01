@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+:root{
+    background: ghostwhite;
+}
+
+.header{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 16px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    position: relative;
+    top: -10px;
+}
+
+.brand a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    float: left;
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 20px;
+
+}
+
+::selection{
+    background: black;
+    color: white;
+}
+
+
+
+.modifyContainer{
+    position: absolute;
+    top: 85px;
+    bottom: 60px;
+    left: 1015px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+.headingTheme{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    color: black;
+    position: relative;
+    top: 0px;
+}
+
+.changeColor{
+    position: relative;
+    top: -30px;
+}
+
+#color{
+    position: relative;
+    top: 30px;
+    left: 0px;
+    height: 40px;
+    width: 40px;
+    background: #D72631;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#color1{
+    position: relative;
+    top: 30px;
+    left: 15px;
+    height: 40px;
+    width: 40px;
+    background: #518FD1;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#color2{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    height: 40px;
+    width: 40px;
+    background: #E68E35;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#color3{
+    position: relative;
+    top: 30px;
+    left: 45px;
+    height: 40px;
+    width: 40px;
+    background: #484B5A;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+#color4{
+    position: relative;
+    top: 90px;
+    left: -176px;
+    height: 40px;
+    width: 40px;
+    background: #1C6B75;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+#color5{
+    position: relative;
+    top: 49px;
+    left: 60px;
+    height: 40px;
+    width: 40px;
+    background: #FB6CFF;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#color6{
+    position: relative;
+    top: 49px;
+    left: 74px;
+    height: 40px;
+    width: 40px;
+    background: #8F8CF3;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+#color7{
+    position: relative;
+    top: 49px;
+    left: 90px;
+    height: 40px;
+    width: 40px;
+    background: #FF6E40;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.headingTheme1{ 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    color: black;
+    position: relative;
+    top: 20px;
+    
+}
+
+.selectFont{
+    position: relative;
+    top: 10px;
+}
+
+
+select{
+    background: ghostwhite;
+    color: black;
+    height: 25px;
+    width: 210px;
+    border-radius: 2px;
+    cursor:pointer;
+
+}
+
+select:focus{
+    background: aliceblue;
+}
+
+  
+.headingTheme3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    color: black;
+    position: relative;
+    top: 10px;
+}
+
+
+.switch {
+    position: relative;
+    top: -45px;
+    left: 150px;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+
+
+  input:checked + .slider {
+    background-color: black;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.printButton{
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    position: relative;
+    top: 60px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.resumeContainer{
+    position: sticky;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 1000px;
+    width: 910px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+    padding: 10px 40px;
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.component{
+    position: absolute;
+    top: 20px;
+    height: 190px;
+    width: 908px;
+    background: black;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+tr{
+    color: black;
+
+}
+
+table, th, td {
+    border: 2px solid dimgrey;
+    border-collapse: collapse;
+
+}
+
+
+  
+input{
+    background: transparent;
+    border:none;
+}
+input:focus{
+    outline: none;
+}
+
+textarea{
+    background: transparent;
+    font-size: 13px;
+    border:none;
+    resize: none;
+    outline: none;
+    width: 100%;
+    min-height: 60px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+  }
+
+.nameHeading{
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 50%;
+    background: transparent;
+    color: white;
+}
+
+
+.nameHeading::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.professionalTitle{
+    margin-left: 30px;
+    margin-bottom:70px;
+    width: 100%;
+    background: transparent;
+    color: white;
+
+}
+
+.professionalTitle::placeholder{
+    color: white;
+}
+
+
+.ProfilePhoto{
+    position: absolute;
+    z-index: 5;
+    margin-left: 700px;
+    margin-top: 30px;
+
+}
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+
+}
+
+
+.metaContainer{
+    position: relative;
+    top: -60px;
+    margin-left: 30px;
+    background-color: transparent;
+
+}
+
+.metaHeading{
+    color: white;
+}
+
+
+
+.metainputs{
+    width: 80%;
+    background-color: transparent;
+    color: white;
+}
+
+.metainputs::placeholder{
+color:white;
+
+}
+
+.careerObjContainer{
+    font-size: 28px;
+    position: relative;
+    top: -50px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.careerObjContainer .cheading{
+    font-size: 20px;
+}
+
+.careerObjContainer .careerObjInput{
+    background: transparent;
+    position: relative;
+    top: 10px;
+    height: 80px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+.acadamicPerfContainer{
+    position: relative;
+    top: -50px; 
+    margin-left: 30px;
+    margin-right: 50px;
+
+
+}
+.acadamicPerfContainer .aheading{
+    font-size: 20px;
+
+}
+
+.acadamicPerfContainer .acadamicPerformanceTable{
+    position: relative;
+    top: 0px;
+    left: 7%;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.addButton{
+    color: black;
+    background: ghostwhite;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: -60px;
+    cursor: pointer;
+
+}
+
+.addButton:hover{
+    opacity: 0.8;
+}
+
+.addButton:active{
+    background:aliceblue;
+}
+
+input[type=button]{
+    color: black;
+    background:ghostwhite;
+    border: none;
+    padding: 8px 11px;
+    border-radius: 3px;
+    cursor: pointer;
+
+
+}
+
+input[type=button]:hover{
+    opacity: 0.8;
+}
+
+input[type=button]:active{
+    background: aliceblue;
+}
+
+
+.certificateContainer{
+    position: relative;
+    top: -50px;
+    margin-left: 30px;
+}
+
+.certificateContainer .ceheading{
+    font-size: 20px;
+}
+
+.projectContainer{
+    position: relative;
+    top: -50px;
+    margin-left: 30px;  
+}
+
+.projectContainer .pheading{
+    font-size: 20px;
+}
+
+
+.internshipContainer{
+    position: relative;
+    top: -50px;
+    margin-left: 30px;    
+}
+
+.internshipContainer .iheading{
+    font-size: 20px;
+
+}
+
+/* _____________ */
+
+.aoiContainer{
+    position: absolute;
+    top: 458px;
+    left: 600px;
+    margin-left: 30px;     
+}
+
+.aoiContainer .aoiheading{
+    font-size: 20px;
+
+}
+
+ul .addedTextareaO{
+    background: transparent;
+    font-size: 13px;
+    border: none;
+    resize: none;
+    outline: none;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    bottom: 10px;
+
+
+}
+
+/* ______________ */
+.addInputButton{
+    color: black;
+    background:ghostwhite;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: -60px;
+    cursor: pointer;
+
+}
+
+.addInputButton:hover{
+    opacity: 0.8;
+}
+
+.addInputButton:active{
+    background: aliceblue;
+}
+
+.removeInputButton{
+    color: black;
+    background:ghostwhite;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    cursor: pointer;
+
+}
+
+
+
+.removeInputButton:hover{
+    opacity: 0.8;
+}
+
+.removeInputButton:active{
+    background: aliceblue;
+}
+
+
+.addedInputSession{
+    background: transparent;
+    font-size: 13px;
+    border: none;
+    resize: none;
+    outline: none;
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: -10px;
+    left: -18px;
+    
+}
+
+.addedInputSession1{
+    background: transparent;
+    font-size: 13px;
+    border: none;
+    resize: none;
+    outline: none;
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: -25px;
+    left: -18px;
+
+}
+
+
+
+.addedTextarea{  
+    background: transparent;
+    font-size: 13px;
+    border: none;
+    resize: none;
+    outline: none;
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: -40px;
+    left: -18px;
+
+    margin-bottom: -20px;
+}
+
+
+.addInputButton1{
+    float: right;
+}
+
+.sideBorder{
+    position: relative;
+    height: 95px;
+    border-left: 5px solid black;
+    margin-bottom: 30px;
+    
+}
+

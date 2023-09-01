@@ -1,0 +1,70 @@
+:root{
+    background: ghostwhite;
+}
+
+
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signup-container{
+	position: absolute;
+	top: 90px;
+	left: 500px;
+}
+
+h2{
+	color: dimgrey;
+	font-size: 28px;
+	margin: 12px -2px;
+	transition: .5s;
+
+}
+
+p{
+	font-size: 13px;
+	color:darkslategrey;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	transition: .5s;
+
+}
+
+input{
+	height: 30px;
+	width: 285px;
+	margin: 10px 0;
+	border: 1px solid black;
+	padding: 5px;
+
+
+}
+
+.button-field{
+	margin: 20px 12px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.cancel-button{
+	margin: 8px;
+	padding: 10px 30px;
+	color: black;
+	background: white;
+	border: 1px solid black;
+}
+
+.signup-button{
+	padding: 10px 30px;
+	color: ghostwhite;
+	background: black;
+	border: 1px solid black;
+}
